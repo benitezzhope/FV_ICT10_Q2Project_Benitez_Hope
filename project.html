@@ -8,13 +8,17 @@
     <title>2Q Skills Test</title>
 
 <style>
- body { 
+  body { 
         font-family: Verdana, Geneva, Tahoma, sans-serif; 
         background: url(https://i.pinimg.com/1200x/5b/96/31/5b9631e0e949bb2fdef354f0ddd38fb0.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 ul {
@@ -45,17 +49,37 @@ ul li a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#firstbox {
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#firstbox, #secondbox {
     background-color: rgb(255, 254, 254);
-    width: 600px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 90px;
+    width: 500px;
+    height: 400px;
+    padding-bottom: 20px;
     border-radius: 15px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(234, 157, 183, 0.4) 5px 5px, rgba(234, 157, 183, 0.3) 10px 10px, rgba(234, 157, 183, 0.2) 15px 15px, rgba(234, 157, 183, 0.1) 20px 20px, rgba(234, 157, 183, 0.05) 25px 25px; /* From CSS Scan */
+    flex-shrink: 0;
+}
+
+#sixseven{
+    background-color: #ffffff; 
+    width: 1045px; 
+    padding: 20px 0; 
+    border-radius: 15px; 
+    text-align: center; 
+    margin-top: 70px; 
+    box-shadow: rgba(234, 157, 183, 0.4) 5px 5px, rgba(234, 157, 183, 0.3) 10px 10px, rgba(234, 157, 183, 0.2) 15px 15px, rgba(234, 157, 183, 0.1) 20px 20px, rgba(234, 157, 183, 0.05) 25px 25px; /* From CSS Scan */
 }
 
 </style>
@@ -70,9 +94,33 @@ ul li a {
   <li><a href="project.html"><b>Meet the Creator</b></a></li>
 </ul>
 
-<div id="firstbox">
-    <h1 style="padding-top: 30px; color: #EA9DB7; font-size: 30px;"><b>Meet the Creator!</b></h1>
-    <img src="hopecode.jpg">
+<div id="sixseven"> 
+    <h1 style="margin: 0; color: #EA9DB7; font-size: 30px;"><b>Meet the Creator</b></h1>
+</div>
+
+<div class="container">
+    <div id="firstbox">
+    <div>
+            <img src="hopecode.jpg" style="width:150px; height: 150px; object-fit: cover; object-position: top; border-radius: 50%; margin-top: 80px;">
+            <h2 style="color: #e4adc0; text-align: center; padding-top: 5px; padding-bottom: 10px;">Hope Margaret O. Benitez</h2>
+            <p style="color: #a0a0a0;"><i>OBFV Student | 10-Emerald</i></p>
+        </div>
+    </div>
+    <div id="secondbox">
+        <div>
+            <h2 style="color: #e4adc0; text-align: center; padding-top: 5px;">Fun Facts</h2>
+
+            <h3 style="text-align: left; padding-left: 15px; color: #e4adc0;">Interests</h3>
+            <p style="text-align: left; padding-left: 15px; color: #a0a0a0;">🌸 K-pop, K-drama, Anime</p>
+            <h3 style="text-align: left; padding-left: 15px; color: #e4adc0;">Hobbies</h3>
+            <p style="text-align: left; padding-left: 15px; color: #a0a0a0;">🌸 Playing volleyball, shopping, gaming, watching movies</p>
+            <h3 style="text-align: left; padding-left: 15px; color: #e4adc0;">Dream</h3>
+            <p style="text-align: left; padding-left: 15px; color: #a0a0a0;">🌸 To be rich and free</p>
+            <h3 style="text-align: left; padding-left: 15px; color: #e4adc0;">Favorite Quote</h3>
+            <p style="text-align: left; padding-left: 15px; color: #a0a0a0;">🌸<i>"If there's a will, there's a way."</i></p>
+        </div>
+        <p id="result2" style="color: #EA9DB7; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: left; margin-left: 15px;"></p>
+    </div>
 </div>
 
 </body>

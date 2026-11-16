@@ -78,8 +78,8 @@ nonmetals = {
 
 # Function to search for an element
 def search_nm(e):
-    # Get the input value from HTML    
-    Nonmetal = document.getElementById("nonmetal").value
+    # Get the input value from HTML, added capitalize() to prevent capitalization errors
+    Nonmetal = document.getElementById("nonmetal").value.capitalize()
     
     # Retrieve information from Dictionary 
     # Fallback: symbol shows "Element not found", others show "-"
